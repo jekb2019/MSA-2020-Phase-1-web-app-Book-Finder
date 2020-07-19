@@ -7,7 +7,7 @@
     max-width: 310px;
 }
 .MediaCardDescription{
-    height: 200px;
-    overflow-y: scroll;
+    height: 50px;
     overflow-wrap: break-word;
+    width: 250px;
 }
