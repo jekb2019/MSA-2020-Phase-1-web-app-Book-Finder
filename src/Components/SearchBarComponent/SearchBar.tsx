@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import {Button, TextField} from '@material-ui/core';
+import {Button, TextField, InputAdornment} from '@material-ui/core';
+import {Search} from "@material-ui/icons";
 import './SearchBar.css';
 
 interface ISearchBarProps{
@@ -26,10 +27,17 @@ function SearchBar(props: ISearchBarProps) {
     return (
         <div className="SearchBarContainer">
             <TextField
+                InputProps={{
+                    startAdornment: (
+                        <InputAdornment position="start">
+                            <Search/>
+                        </InputAdornment>
+                    )
+                 }}
                 style = {{width: 500}}
                 required
                 id="outlined-required"
-                label="Search"
+                label="Search book title: eg. The Hunger Games"
                 variant="outlined"
                 error={HasFocus && SearchQuery === ""}
                 onClick={() => setHasFocus(true)}

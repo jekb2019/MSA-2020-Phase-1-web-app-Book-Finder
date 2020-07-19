@@ -24,6 +24,7 @@ function MediaGrid(props: IMediaGridProps) {
 
     var Cards: JSX.Element[] = [];
     ItemArray.forEach((el: any, i: Number) => {
+        try{
         if (!el) {
             return;
         }
@@ -31,6 +32,9 @@ function MediaGrid(props: IMediaGridProps) {
             <Grid key={"card_"+i} item sm={6} md={4} lg={3} className="MediaGridCard">
                 <MediaCard ImageUrl={el.volumeInfo.imageLinks.thumbnail} Title={el.volumeInfo.title} />
             </Grid>)
+        }catch(error){
+            return;
+        }
     })
     
     return (
