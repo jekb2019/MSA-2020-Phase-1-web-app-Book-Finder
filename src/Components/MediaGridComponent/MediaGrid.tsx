@@ -15,6 +15,7 @@ function MediaGrid(props: IMediaGridProps) {
         fetch("https://www.googleapis.com/books/v1/volumes?q=" + props.SearchQuery)
             .then(response => response.json())
             .then(response => {
+                console.log(response.items)
                 setItemArray(response.items)
             })
             .catch(() => console.log("it didn't work")
@@ -30,7 +31,7 @@ function MediaGrid(props: IMediaGridProps) {
         }
         Cards.push(
             <Grid key={"card_"+i} item sm={6} md={4} lg={3} className="MediaGridCard">
-                <MediaCard ImageUrl={el.volumeInfo.imageLinks.thumbnail} Title={el.volumeInfo.title} />
+                <MediaCard ImageUrl={el.volumeInfo.imageLinks.thumbnail} Title={el.volumeInfo.title} Link={el.volumeInfo.canonicalVolumeLink} />
             </Grid>)
         }catch(error){
             return;

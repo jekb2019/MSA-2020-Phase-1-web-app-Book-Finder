@@ -9,11 +9,25 @@ import './MediaCard.css';
 interface IMediaCardProps{
     ImageUrl: string | undefined;
     Title: string | undefined;
+    Link: string;
 }
 
+
 function MediaCard(props: IMediaCardProps){
+
+    function viewBookWeb(){
+        try{
+            window.open(
+                props.Link,
+                '_blank'
+            );
+        }catch(err){
+            console.log('no viewable website');
+        }
+    }
+
     return(
-        <div>
+        <div onClick={viewBookWeb}>
             <Card className="MediaCardContainer">
                 <CardActionArea>
                     <CardMedia
