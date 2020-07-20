@@ -2,3 +2,13 @@
     margin: auto;
     margin: 20px;
 }
+
+.SearchTextField{
+    width: 70%;
+    max-width: 600px;
+}
+
+.SearchButton{
+    width: 100px;
+    height: 55px;
+}

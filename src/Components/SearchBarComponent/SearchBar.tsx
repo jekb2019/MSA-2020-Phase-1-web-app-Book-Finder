@@ -27,6 +27,7 @@ function SearchBar(props: ISearchBarProps) {
     return (
         <div className="SearchBarContainer">
             <TextField
+                className="SearchTextField"
                 InputProps={{
                     startAdornment: (
                         <InputAdornment position="start">
@@ -34,7 +35,6 @@ function SearchBar(props: ISearchBarProps) {
                         </InputAdornment>
                     )
                  }}
-                style = {{width: 500}}
                 required
                 id="outlined-required"
                 label="Search book title: eg. The Hunger Games"
@@ -44,7 +44,7 @@ function SearchBar(props: ISearchBarProps) {
                 value={SearchQuery}
                 onChange={e => handleSearchQueryChange(e.target.value)}
             />
-            <Button style = {{width: 100, height: 55}} variant="contained" onClick={handleSubmit}>Search</Button>
+            <Button className="SearchButton" variant="contained" onClick={handleSubmit}>Search</Button>
         </div>
     )
 }

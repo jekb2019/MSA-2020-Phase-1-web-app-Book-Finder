@@ -12,6 +12,7 @@ function App() {
     setUserQuery(term);
   }
 
+
   return (
     <div className="App">
       <Banner></Banner>
