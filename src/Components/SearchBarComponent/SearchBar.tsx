@@ -41,6 +41,11 @@ function SearchBar(props: ISearchBarProps) {
                 variant="outlined"
                 error={HasFocus && SearchQuery === ""}
                 onClick={() => setHasFocus(true)}
+                onKeyPress={(e)=>{
+                    if(e.key === 'Enter'){
+                        handleSubmit();
+                    }
+                }}
                 value={SearchQuery}
                 onChange={e => handleSearchQueryChange(e.target.value)}
             />

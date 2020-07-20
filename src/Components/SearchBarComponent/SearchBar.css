@@ -12,3 +12,12 @@
     width: 100px;
     height: 55px;
 }
+@media (max-width: 372px) {
+    .SearchButton{
+        width: 290px;
+        height: 55px;
+    }
+    .SearchTextField{
+        width: 290px;
+    }
+}
