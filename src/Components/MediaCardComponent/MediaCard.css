@@ -9,3 +9,15 @@
     overflow-wrap: break-word;
     width: 250px;
 }
+
+@media (max-width: 599px) {
+    .MediaCardDescription{
+        width: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+    .MediaCardDescription{
+        width: 300px;
+    }
+}

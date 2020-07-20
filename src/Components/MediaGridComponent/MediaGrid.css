@@ -9,3 +9,9 @@
     align-content: center;
     justify-content: center;
 }
+
+@media (max-width: 599px) {
+    .MediaGridContainer{
+        justify-content: space-around;
+    }
+}
