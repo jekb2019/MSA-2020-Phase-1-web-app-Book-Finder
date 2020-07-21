@@ -17,19 +17,19 @@ Book Finder URL: http://book-searcher.azurewebsites.net/
 ## Screenshots
 The website is fully responsive for devices such as laptop (large, small), tablets, and mobile (large, small)
 
-#### Laptop - Large (1440px)
+### Laptop - Large (1440px)
 ![1440px](./images/Laptop-large-1440px.PNG)
 
-#### Laptop - Small (1024px)
+### Laptop - Small (1024px)
 ![1024px](./images/Laptop-small-1024px.PNG)
 
-#### Tablet (650px)
+### Tablet (650px)
 ![650px](./images/Tablet-650px.PNG)
 
-#### Mobile - Large (375px)
+### Mobile - Large (375px)
 ![375px](./images/Mobile-large-375px.PNG)
 
-#### Mobile - Small (360px)
+### Mobile - Small (360px)
 ![360px](./images/Mobile-small-360px.PNG)
 
 ## Usage
