@@ -8,15 +8,21 @@ This project is written for 2020 [Microsoft Student Accelerator] Phase 1 Front E
 
 Book Finder URL: http://book-searcher.azurewebsites.net/
 
-# Azure Pipeline
+# DevOps
 Azure Pipeline provides automated build and test for this web-app and simplifies the deloyment process.
+Any commits that occurs on master or development branch will trigger Azure pipeline to publish the artifact.
+Using Azure Pipeline, developers can simply deploy/update the web-app by making new commits.
 
 ## Build Pipeline
-This web-app is deployed using Azure Build Pipeline. 
-The build pipeline enables continuous deployement by publishing new version of the web-app whenever there is a new commit detected on master or develop branch.
+The build pipeline enables continuous deployement by publishing new release of the web-app.
+Whenever there is a new commit detected on master or develop branch, the build pipeline will be triggered.
+The build pipeline will publish the new release of the web-app.
 
 ## Release Pipeline
-The relase pipeline enables contoinuous deployement by releasing the web-app that is published by the build pipeline. THe release pipeline only releases the new version to the master branch.
+The relase pipeline enables contoinuous deployement by releasing the web-app that is published by the build pipeline.
+The release pipeline is triggered when there is new a commit detected on master branch.
+
+The deployed web-app is viewable via http://book-searcher.azurewebsites.net/.
 
 ## This project is written using
 - [React.js]
